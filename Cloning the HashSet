@@ -1,0 +1,34 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        HashSet<Integer>set1=new HashSet<Integer>();
+        System.out.print("Enter the length of the set: ");
+        int length=in.nextInt();
+        System.out.println("Enter the elements: ");
+        for(int i=0;i<length;i++)
+        {
+            set1.add(in.nextInt());
+        }
+        System.out.println("The set 1 is "+set1);
+        HashSet<Integer>set2=new HashSet<Integer>();
+        set2=(HashSet)set1.clone();
+        System.out.println("The set 2 after cloning is "+set2);
+
+    }
+
+}
+
+
+
+
+
+
+
